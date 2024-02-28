@@ -1,6 +1,6 @@
 # PGWarp
 
-**PGWarp** is a service which captures Postgres SnapShot, Incremental-SnapShot and CDC Events and publishes them to NATS. 
+**PGWarp** is a service which captures [Postgres](https://www.postgresql.org/) SnapShot, Incremental-SnapShot and CDC Events and publishes them to [NATS](https://nats.io/). 
 **PGWarp** turns Postgres into a near real-time reactive event stream.
 
 ## Features
@@ -9,3 +9,10 @@
 - SnapShot or Incremental-SnapShot of historical data from Postgres and publishing them to a NATS stream.
 - Non locking Incremental-SnapShot without locking tables.
 - Incremental-SnapShot of table while capturing table CDC events both run in parallel at the same time and returns data as a single stream of events.
+
+## References
+
+- [DBLog](https://netflixtechblog.com/dblog-a-generic-change-data-capture-framework-69351fb9099b)
+- [pgcapture](https://github.com/replicase/pgcapture)
+- [Debezium](https://debezium.io/)
+- [WAL-Listener](https://github.com/ihippik/wal-listener)
