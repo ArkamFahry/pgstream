@@ -1,7 +1,7 @@
 # PGWarp
 
 **PGWarp** is a service which captures [Postgres](https://www.postgresql.org/) SnapShot, Incremental-SnapShot and CDC Events and publishes them to [NATS](https://nats.io/). 
-**PGWarp** turns Postgres into a near real-time reactive event stream.
+**PGWarp** turns Postgres into a real-time reactive event stream.
 
 ## Features
 
