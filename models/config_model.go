@@ -9,6 +9,13 @@ const (
 	SnapshotTypeNormal      = "normal"
 	SnapshotTypeIncremental = "incremental"
 
+	EventSnapshot = "snapshoter"
+	EventInsert   = "insert"
+	EventUpdate   = "update"
+	EventDelete   = "delete"
+	EventTruncate = "truncate"
+	EventUnknown  = "unknown"
+
 	StreamTypePersistent = "persistent"
 	StreamTypeTransient  = "transient"
 )
@@ -33,7 +40,8 @@ type TableInclude struct {
 	Name        string   `json:"name" mapstructure:"name"`
 	PrimaryKeys []string `json:"primary_keys" mapstructure:"primary_keys"`
 	Columns     []string `json:"columns" mapstructure:"columns"`
-	Snapshot    bool     `json:"snapshot" mapstructure:"snapshot"`
+	Events      []string `json:"events" mapstructure:"events"`
+	Snapshot    bool     `json:"snapshoter" mapstructure:"snapshoter"`
 	StreamType  string   `json:"stream_type" mapstructure:"stream_type"`
 }
 
