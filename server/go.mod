@@ -1,4 +1,4 @@
-module github.com/ArkamFahry/pgwarp/server
+module github.com/ArkamFahry/pgstream/server
 
 go 1.22.0
 
